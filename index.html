@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bean Counters</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<header> <pre><code>
+const btnEl = document.querySelector("loop")
+const emojiContainer = document.createElement('ul')
+arrayEmoji.forEach(myFunction)
+function myFunction(item, index, arr) {
+     arr[index] = item
+     console.log(arr[index])
+}
+for (let index = 0; index < arrayEmoji.length; index++) {
+     const element = arrayEmoji[index];
+     const emojiLi = document.createElement('li')
+     emojiLi.classList.add('emoji')
+     emojiLi.style.fontSize = "20px"
+     emojiLi.innerText = element
+     emojiContainer.appendChild(emojiLi)
+}
+document.querySelector('p').appendChild(emojiContainer)
+</code></pre>
+</header>
+<body>
+
+          <form name="selectForm">
+               <label for="musicTypes"> &#128512; Choose some music types, then click the button below:</label>
+               <select id="musicTypes" name="musicTypes" multiple>
+                 <option selected>R&B</option>
+                 <option>Jazz</option>
+                 <option>Blues</option>
+                 <option>New Age</option>
+                 <option>Classical</option>
+                 <option>Opera</option>
+               </select>
+               <button id="btn" type="button">How many are selected?</button>
+             </form>   
+
+             <p></p>
+          
+
+     <button type="button" class="loop">View</button>
+     
+
+    <script defer src="script.js"></script> 
+</body>
+</html>
